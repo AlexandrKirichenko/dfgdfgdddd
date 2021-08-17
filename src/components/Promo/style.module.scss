@@ -1,0 +1,77 @@
+@import "../../assets/scss/abstract/mixins";
+@import "../../assets/scss/abstract/constants";
+@import "../../assets/scss/buttons";
+
+.promo {
+  padding: 4.8rem 0 8.1rem 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F9FF 100%);
+  
+  @include mobile {
+    padding: 0 0;
+  }
+}
+
+.promo__container {
+  @include flex(space-between);
+  @include mobile{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .promo__content {
+    max-width: 451px;
+    padding-bottom: 3rem;
+    @include mobile {
+      padding: 2rem 0;
+    }
+  }
+  .content__text {
+    @include font(1.8rem, 3rem, normal);
+    color: $color-text;
+    @include mobile{
+      @include font(1.4rem, 2.6rem, normal);
+    }
+  }
+}
+
+.promo__content__header {
+  @include mobile{
+    text-align: center;
+  }
+}
+
+.link-button{
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.promo__buttons {
+  @include flex(flex-start);
+  @include font(1.4rem, 3rem, normal);
+  color: $color-text;
+}
+
+.promo__image {
+  background-image: url("../../assets/img/images/promo.svg");
+  heigth: 476px;
+  width: 576px;
+  //@include bg-img("../../assets/img/images/promo.svg",476px,576px);
+  @include mobile {
+    max-width: 300px;
+  }
+}
+
+.prom {
+  width: 119px;
+}
+
+.ico_checked {
+  margin-left: 15px;
+  //@include bg-img ("../../assets/img/icons/checkmark.png",24px)
+  background-image: url("../../assets/img/icons/checkmark.png");
+  heigth:24px;
+  width:24px;
+}
+
+.acc {
+  max-width: 181px;
+}

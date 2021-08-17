@@ -1,0 +1,14 @@
+@import "assets/scss/abstract/mixins";
+@import "assets/scss/abstract/constants";
+@import "assets/scss/buttons";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  font-family: 'Nunito Sans', sans-serif;
+}
