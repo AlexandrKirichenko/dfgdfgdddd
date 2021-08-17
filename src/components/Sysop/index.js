@@ -36,7 +36,6 @@ const Sysop= () => {
 
 export default Sysop;
 
-
 {/*    <section className={sysop}>*/}
 {/*        <div className={sysop__container container}>*/}
 {/*            <div className={sysop__logo}>*/}
