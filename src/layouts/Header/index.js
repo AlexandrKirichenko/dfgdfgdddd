@@ -1,15 +1,15 @@
 import React from "react";
 import s from './style.module.scss';
 import cn from 'classnames';
+import Burger from '../Burger';
+
 
 const Header = () => {
     return (
         <header className={s.header}>
             <div className={cn(s.header__container, s.container)}>
                 <div className={s.header__logoline}>
-            <span className={s.hamburger}>
-                <span className={s.hamburger__line}></span>
-            </span>
+                    <Burger/>
                 </div>
                 <a href="#" className={s.logo}>
                     <div className={s.logo__icon}></div>

@@ -12,24 +12,24 @@ const SideBar = () => {
                         <a href="#" className={s.menu__link}>
                         <div className={cn(s.icon, s.ico_binary)}></div>
                         Binary Fortress</a>
-                        <button type="button" className={cn(s.menu__arrow, s.ico_arrow)}></button>
+                        <button type={s.button} className={cn(s.menu__arrow, s.ico_arrow)}></button>
                     </li>
-                    <li className="menu__item"><a href="#" className={s.menu__link}>
+                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
                         <div className={cn(s.icon, s.ico_display)}></div>
                         DisplayFusion</a></li>
-                    <li className="menu__item"><a href="#" className={s.menu__link}>
+                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
                         <div className={cn(s.icon, s.ico_check)}></div>
                         CheckCentral</a></li>
-                    <li className="menu__item"><a href="#" className={s.menu__link}>
+                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
                         <div className={cn(s.icon, s.ico_clip)}></div>
                         ClipboardFusion</a></li>
-                    <li className="menu__item"><a href="#" className={s.menu__link}>
+                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
                         <div className={cn(s.icon, s.ico_seek)}></div>
                         FileSeek</a></li>
-                    <li className="menu__item"><a href="#" className={s.menu__link}>
+                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
                         <div className={cn(s.icon, s.ico_bot)}></div>
                         VoiceBot</a></li>
-                    <li className="menu__item"><a href="#" className={s.menu__link}>
+                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
                         <div className={cn(s.icon, s.ico_wall)}></div>
                         WallpaperFusion</a></li>
                 </ul>

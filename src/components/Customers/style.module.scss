@@ -1,10 +1,10 @@
-@import "../../assets/scss/abstract/mixins";
-@import "../../assets/scss/abstract/constants";
+@import "../../scss/abstract/mixins";
+@import "../../scss/abstract/constants";
 
 .customers {
   padding: 51px 0 49px 0;
   @include mobile {
-    padding: 1rem 0;
+    padding: 10px 0;
   }
 }
 .customers__container {
@@ -30,23 +30,18 @@
   display: inline-block;
 }
 
-//.insta{
-//  @include bg-customers("/img/customers/insta.png",5.4rem, 22rem);
-//}
-.insta {
-   background: url(../../assets/img/customers/insta.png) no-repeat center;
-   heigth: 54px;
-   width: 22px;
- }
+.insta{
+  @include bg-customers("../../assets/img/customers/insta.png",64px, 220px);
+}
 
-//.twitter {
-//  @include bg-customers("/img/customers/twitter.png",4.5rem, 24.2rem);
-//}
-//
-//.cnn {
-//  @include bg-customers("/img/customers/cnn2.png",6rem, 13rem);
-//}
-//
-//.facebook {
-//  @include bg-customers("/img/customers/fb.png",4.6rem, 23.8rem);
-//}
+.twitter {
+  @include bg-customers("../../assets/img/customers/twitter.png",4.5rem, 24.2rem);
+}
+
+.cnn {
+  @include bg-customers("../../assets/img/customers/cnn2.png",6rem, 13rem);
+}
+
+.facebook {
+  @include bg-customers("../../assets/img/customers/fb.png",4.6rem, 23.8rem);
+}

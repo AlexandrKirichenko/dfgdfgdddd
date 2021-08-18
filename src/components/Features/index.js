@@ -11,7 +11,7 @@ const Features = () => {
                     <h2>CloudShow Features</h2>
                     <div className={s.section__description}>Discover our unique features and learn more about them.</div>
                 </div>
-                <div className={s.layout-3}>
+                <div className={s.layout__3_column}>
                     <div className={s.features__block}>
                         <div className={s.block__content_wrap}>
                             <div className={s.features__header}>

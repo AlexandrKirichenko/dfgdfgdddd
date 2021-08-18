@@ -1,12 +1,16 @@
-@import "../../assets/scss/abstract/mixins";
-@import "../../assets/scss/abstract/constants";
-@import "../../assets/scss/buttons";
+@import "../../scss/abstract/mixins";
+@import "../../scss/abstract/constants";
+@import "../../scss/buttons";
 
 .header {
   padding-top: 36px;
-  //@include mobile{
-  //  position: fixed;
-  //}
+  @include mobile{
+    //position: fixed;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
 }
 .header__buttons {
   @include mobile{

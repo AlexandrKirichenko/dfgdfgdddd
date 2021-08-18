@@ -1,6 +1,6 @@
-@import "../../assets/scss/abstract/mixins";
-@import "../../assets/scss/abstract/constants";
-@import "../../assets/scss/buttons";
+@import "../../scss/abstract/mixins";
+@import "../../scss/abstract/constants";
+@import "../../scss/buttons";
 
 //.features_container{
 //  display: flex;
@@ -11,22 +11,24 @@
   background-color:$color-background;
   .section__header {
     padding-top: 104px;
+    text-align: center;
   }
   .section__description {
-    padding: 1.4rem 0 6rem 0;
+    padding: 14px 0 60px 0;
   }
 }
 
-.section__header,
-.section__description {
-  text-align: center;
-}
+//.section__header,
+//.section__description {
+//  text-align: center;
+//}
+
 .section__header {
   margin-bottom: 0;
   font-family: Nunito Sans;
   color:$color-hading;
   @include mobile{
-    padding-top: 0.5rem;
+    padding-top: 5px;
   }
 }
 
@@ -35,22 +37,22 @@
   color: $color-text;
 }
 
-.layout-3 {
-  @include columns($width: 33.4rem);
+.layout__3_column{
+  @include columns($width: 334px);
   @include mobile{
-    @include columns($width: 36.4rem);
+    @include columns($width: 364px);
   }
   @include font(1.4rem, 2.6rem, normal);
   color: $color-text;
 }
 
 .features__header {
-  padding-bottom: 1rem;
+  padding-bottom: 10px;
   @include flex(flex-start);
 }
 
 .features__link {
-  padding-top: 0.1rem;
+  padding-top: 1px;
   font-family: Nunito Sans;
   @include font(1.8rem, 3rem, bold);
   color: $color-brand;
@@ -64,6 +66,24 @@
 }
 
 .block__content_wrap {
-  padding: 2.5rem 1.8rem 2.5rem 2.5rem;
+  padding: 25px 18px 25px 25px;
 }
 
+.ico_flex {
+  @include bg-img ("../../assets/img/icons/features/1.svg",5.1rem)
+}
+.ico_apps {
+  @include bg-img ("../../assets/img/icons/features/2.svg",5.1rem)
+}
+.ico_schedul {
+  @include bg-img ("../../assets/img/icons/features/3.svg",5.1rem)
+}
+.ico_templates {
+  @include bg-img ("../../assets/img/icons/features/4.svg",5.1rem)
+}
+.ico_widgets {
+  @include bg-img ("../../assets/img/icons/features/5.svg",5.1rem)
+}
+.ico_realtime{
+  @include bg-img ("../../assets/img/icons/features/6.svg",5.1rem)
+}
