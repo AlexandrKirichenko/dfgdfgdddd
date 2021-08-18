@@ -3,7 +3,6 @@ import s from './style.module.scss';
 import cn from 'classnames';
 import Burger from '../Burger';
 
-
 const Header = () => {
     return (
         <header className={s.header}>
