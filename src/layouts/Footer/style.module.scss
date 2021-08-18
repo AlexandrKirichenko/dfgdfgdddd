@@ -1,0 +1,93 @@
+@import "../../scss/abstract/mixins";
+@import "../../scss/abstract/constants";
+@import "../../scss/buttons";
+
+.footer {
+  background: $color-hading;
+  .header__buttons {
+    .button {
+      width: 119px;
+      margin: 33px 0 0 15px;
+    }
+  }
+  &__container {
+    display: flex;
+  }
+};
+
+.footer__navigation {
+  flex-grow:1;
+  @include mobile{
+    flex-direction: column;
+    .logo {
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+  .nav__link {
+    color: $color-white;
+    text-decoration:none;
+    display:flex;
+  }
+  
+  &_links{
+    list-style: none;
+  }
+  li {
+    padding: 1.5rem 0;
+  }
+}
+
+.footer__navigation_links {
+  
+  .nav__link_title{
+    color: #78829C;
+  }
+}
+
+.layout_4_column {
+  
+  @include columns($width: 23%);
+  @include font(1.5rem, 2rem, 400);
+  margin-right: 7rem;
+  @include mobile{
+    margin-right: 0;
+    > * {
+      flex-basis: auto;
+    }
+  }
+}
+
+.one{
+  margin: 0 2rem 0 -10rem;
+  @include mobile{
+    margin: 0;
+  }
+}
+
+.copyrighting {
+  border-top: 1px solid rgba(255, 255, 255, 0.118089);
+  text-align: center;
+  @include font(1.7rem, 2.3rem, 600);
+  color: $color-white;
+  padding: 3rem 0 5.3rem;
+}
+
+.ico_fb{
+  @include bg-img ("../../assets/img/icons/footer/fb.svg",24px);
+}
+.icon ico_fb {
+  padding:1rem ;
+  margin: 1rem;
+}
+.ico_linkedin{
+  @include bg-img ("../../assets/img/icons/footer/linkedin.svg",24px);
+}
+
+.ico_insta{
+  @include bg-img ("../../assets/img/icons/footer/insta.svg",24px);
+}
+
+.ico_twitter{
+  @include bg-img ("../../assets/img/icons/footer/twitter.svg",24px);
+}

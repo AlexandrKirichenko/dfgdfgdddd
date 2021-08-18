@@ -48,6 +48,9 @@
 
 .features__header {
   padding-bottom: 10px;
+  .block__header {
+    padding-left: 10px;
+  }
   @include flex(flex-start);
 }
 

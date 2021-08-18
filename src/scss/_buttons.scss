@@ -2,11 +2,12 @@
 .button {
   @include font(1.5rem, 3.2rem, 700);
   text-align: center;
-  border-radius: 0.6rem;
+  border-radius: 6px;
   cursor: pointer;
-  height: 4.4rem;
+  height: 44px;
   outline: none;
   border: none;
+
   
   &_bordered {
     background: $color-white;

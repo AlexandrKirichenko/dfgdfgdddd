@@ -1,13 +1,14 @@
 import React from 'react'
 import s from './style.module.scss'
 import cn from 'classnames'
+import sysop from '../../assets/img/sysops.png'
 
 const Sysop= () => {
     return (
         <section className={s.sysop}>
             <div className={cn(s.sysop__container, s.container)}>
                 <div className={s.sysop__logo}>
-                    <img src="../../assets/img/sysops.png" alt="sysop.logo"/>
+                    <img src={sysop} alt="sysop.logo"/>
                 </div>
                 <div className={s.sysop__description}>
                     <p>I use CloudShow on a TV in my ice cream shop to show what flavors we’re currently
