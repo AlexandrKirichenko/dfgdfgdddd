@@ -27,14 +27,14 @@ const Signage = () => {
                         them.</p>
                 </div>
                 <div className={s.layout__2_column}>
-                    <SignageItem description={'Dashboards'} src={dashboard}/>
-                    {/*<div className={s.signage__block}>*/}
-                    {/*    <div className={s.block_wrap}>*/}
-                    {/*        <img className={s.signage__item} src={dashboard}*/}
-                    {/*             alt="dashboards"/>*/}
-                    {/*        <p className={s.signage__text}>Dashboards</p>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+                    {/*<SignageItem description={'Dashboards'} src={dashboard}/>*/}
+                    <div className={s.signage__block}>
+                        <div className={s.block_wrap}>
+                            <img className={s.signage__item} src={dashboard}
+                                 alt="dashboards"/>
+                            <p className={s.signage__text}>Dashboards</p>
+                        </div>
+                    </div>
                     <div className={s.signage__block}>
                         <div className={s.block_wrap}>
                             <img className={s.signage__item} src={calendars} alt="calendars"/>
