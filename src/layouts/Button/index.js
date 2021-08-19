@@ -20,8 +20,6 @@ const Button= ({classNames, children }) => {
         .split(' ')
         .map((classItem) => s[classItem])
         .join(' ');
-    console.log('классы кнопки: ', classes);
-    console.log(3)
     return (
         <button type={'button'} className={classes}>
             {children}

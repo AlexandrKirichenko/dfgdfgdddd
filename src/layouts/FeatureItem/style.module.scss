@@ -1,0 +1,39 @@
+@import "../../scss/abstract/mixins";
+@import "../../scss/abstract/constants";
+
+.features__header {
+  padding-bottom: 10px;
+  .block__header {
+    padding-left: 10px;
+  }
+  @include flex(flex-start);
+}
+
+.features__block {
+  background-color: $color-white;
+  margin-bottom: 3.1rem;
+  @include font(1.4rem, 2.6rem, normal);
+}
+
+.block__content_wrap {
+  padding: 25px 18px 25px 25px;
+}
+
+.ico_flex {
+  @include bg-img ("../../assets/img/icons/features/1.svg",5.1rem)
+}
+.ico_apps {
+  @include bg-img ("../../assets/img/icons/features/2.svg",5.1rem)
+}
+.ico_schedul {
+  @include bg-img ("../../assets/img/icons/features/3.svg",5.1rem)
+}
+.ico_templates {
+  @include bg-img ("../../assets/img/icons/features/4.svg",5.1rem)
+}
+.ico_widgets {
+  @include bg-img ("../../assets/img/icons/features/5.svg",5.1rem)
+}
+.ico_realtime{
+  @include bg-img ("../../assets/img/icons/features/6.svg",5.1rem)
+}

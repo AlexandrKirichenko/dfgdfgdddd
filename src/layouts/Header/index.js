@@ -46,9 +46,10 @@ const Header = ({classNames, children }) => {
                     </ul>
                 </nav>
                 <div className={s.header__buttons}>
-                    <Button className={'button button_bordered'} children={'Hoho'}/>
-                    <button className={cn(s.button, s.button_bordered)}>Login</button>
-                    <button className={cn(s.button, s.button_colored)}>Free Trial</button>
+                    <Button classNames={'button button_bordered'} children={'Login'}/>
+                    <Button classNames={'button button_colored'} children={'Free Trial'}/>
+                    {/*<button className={cn(s.button, s.button_bordered)}>Login</button>*/}
+                    {/*<button className={cn(s.button, s.button_colored)}>Free Trial</button>*/}
                 </div>
             </div>
         </header>
