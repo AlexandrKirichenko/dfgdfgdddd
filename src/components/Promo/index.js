@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 const Promo = () => {
     return (
-        <section className={s.promo}>
+        <section className={s.promo} id="promo">
             <div className={cn(s.promo__container, s.container)}>
                 <div className={s.promo__content}>
                     <h1 className={s.promo__content__header}>Digital Signage Made Easy</h1>

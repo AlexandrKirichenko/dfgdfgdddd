@@ -1,4 +1,5 @@
 import './App.scss';
+import cn from 'classnames'
 import SideBar from "./components/SideBar";
 import Header from "./layouts/Header";
 import Promo from "./components/Promo";
@@ -9,7 +10,7 @@ import Signage from "./components/Signage";
 import CreateAcc from "./components/CreateAcc";
 import Footer from './layouts/Footer'
 import React from "react";
-
+import s from './layouts/Header/style.module.scss'
 
 function App() {
   return (

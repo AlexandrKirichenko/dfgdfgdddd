@@ -5,7 +5,7 @@ import sysop from '../../assets/img/sysops.png'
 
 const Sysop= () => {
     return (
-        <section className={s.sysop}>
+        <section className={s.sysop} id="sysop">
             <div className={cn(s.sysop__container, s.container)}>
                 <div className={s.sysop__logo}>
                     <img src={sysop} alt="sysop.logo"/>

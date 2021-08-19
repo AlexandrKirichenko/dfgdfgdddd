@@ -3,28 +3,33 @@ import Customers from '../Customers'
 import s from './style.module.scss'
 import cn from 'classnames'
 
+// function FeatureBlock() {
+//     return <div className={s.features__block}>
+//         <div className={s.block__content_wrap}>
+//             <div className={s.features__header}>
+//                 <div className={cn(s.icon, s.ico_flex)}></div>
+//                 <h4 className={s.block__header}>{text}</h4>
+//             </div>
+//             <div className={s.feature__description}>
+//                 Use CloudShow to power a menu board at your restaurant, a promo screen in reception, an
+//                 analytics
+//                 dashboard for production, or anything else you can think of.
+//             </div>
+//         </div>
+//     </div>
+// }
+
 const Features = () => {
     return (
-        <section className={s.features}>
+        <section className={s.features} id="features">
             <div className={cn(s.features_container, s.container)}>
                 <div className={s.section__header}>
                     <h2>CloudShow Features</h2>
-                    <div className={s.section__description}>Discover our unique features and learn more about them.</div>
+                    <div className={s.section__description}>Discover our unique features and learn more about them.
+                    </div>
                 </div>
                 <div className={s.layout__3_column}>
-                    <div className={s.features__block}>
-                        <div className={s.block__content_wrap}>
-                            <div className={s.features__header}>
-                                <div className={cn(s.icon, s.ico_flex)}></div>
-                                <h4 className={s.block__header}>Flexible & Easy to Setup</h4>
-                            </div>
-                            <div className={s.feature__description}>
-                                Use CloudShow to power a menu board at your restaurant, a promo screen in reception, an
-                                analytics
-                                dashboard for production, or anything else you can think of.
-                            </div>
-                        </div>
-                    </div>
+                    {/*<FeatureBlock text={"Flexible & Easy to Setup"}/>*/}
                     <div className={s.features__block}>
                         <div className={s.block__content_wrap}>
                             <div className={s.features__header}>

@@ -8,7 +8,7 @@ import promotional from '../../assets/img/images/promotional.png';
 
 const Signage = () => {
     return (
-        <section className={s.signage}>
+        <section className={s.signage} id="signage">
             <div className={cn(s.signage__container, s.container)}>
                 <div className={s.section__header}>
                     <h2>Digital Signage that grow your business</h2>
