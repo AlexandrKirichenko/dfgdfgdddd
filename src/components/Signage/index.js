@@ -7,16 +7,6 @@ import weather from '../../assets/img/images/weather.png'
 import s from './style.module.scss'
 import SignageItem from '../../layouts/SignageItem'
 
-// function SignageItem() {
-//     return <div className={s.signage__block}>
-//         <div className={s.block_wrap}>
-//             <img className={s.signage__item} src={dashboard}
-//                  alt="dashboards"/>
-//             <p className={s.signage__text}>Dashboards</p>
-//         </div>
-//     </div>
-// }
-
 const Signage = () => {
     return (
         <section className={s.signage} id="signage">
@@ -27,32 +17,10 @@ const Signage = () => {
                         them.</p>
                 </div>
                 <div className={s.layout__2_column}>
-                    {/*<SignageItem description={'Dashboards'} src={dashboard}/>*/}
-                    <div className={s.signage__block}>
-                        <div className={s.block_wrap}>
-                            <img className={s.signage__item} src={dashboard}
-                                 alt="dashboards"/>
-                            <p className={s.signage__text}>Dashboards</p>
-                        </div>
-                    </div>
-                    <div className={s.signage__block}>
-                        <div className={s.block_wrap}>
-                            <img className={s.signage__item} src={calendars} alt="calendars"/>
-                            <p className={s.signage__text}>Calendars</p>
-                        </div>
-                    </div>
-                    <div className={s.signage__block}>
-                        <div className={s.block_wrap}>
-                            <img className={s.signage__item} src={weather} alt="weather"/>
-                            <p className={s.signage__text}>Weather</p>
-                        </div>
-                    </div>
-                    <div className={s.signage__block}>
-                        <div className={s.block_wrap}>
-                            <img className={s.signage__item} src={promotional} alt="weather"/>
-                            <p className={s.signage__text}>Promotional</p>
-                        </div>
-                    </div>
+                    <SignageItem description={'Dashboards'} src={dashboard}/>
+                    <SignageItem description={'Calendars'} src={calendars}/>
+                    <SignageItem description={'Promotional'} src={promotional}/>
+                    <SignageItem description={'Weather'} src={weather}/>
                 </div>
             </div>
         </section>
