@@ -41,6 +41,7 @@
     color: $color-white;
     padding: 0.6rem 5rem;
     @extend %transition;
+    margin-right: 20px;
     &:hover {
       background: $color-white;
       border-color: $color-brand;
@@ -59,4 +60,9 @@
       color: $color-white;
     }
   }
+}
+
+.prom,
+.foo {
+  width: 119px;
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './style.module.scss'
 import cn from 'classnames'
+import Button from '../../layouts/Button'
 
 const CreateAcc = () => {
     return (
@@ -13,11 +14,11 @@ const CreateAcc = () => {
                         one device! <br/>
                         Need more devices?</p>
                     <div className={s.create__account_buttons}>
-                        <button className={cn(s.button, s.button_long_colored)}>View Demo</button>
-                        <button className={cn(s.button, s.button_long_light)}>Create Free Account</button>
+                        <Button classNames={'button button_long_colored'} children={'View Demo'}/>
+                        <Button classNames={'button button_long_light'} children={'Create Free Account'}/>
                         <div className={s.trial__container}>
                             <div className={cn(s.icon, s.ico_checked)}></div>
-                            <p>60-day Enterprise free trial</p>
+                            <div class={s.trial}>60-day Enterprise free trial</div>
                         </div>
                     </div>
                 </div>

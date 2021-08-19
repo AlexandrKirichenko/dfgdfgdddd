@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './style.module.scss'
 import cn from 'classnames'
-import Button from '../Button'
+import Button from '../../layouts/Button'
 
 const Promo = () => {
     return (
@@ -14,7 +14,7 @@ const Promo = () => {
                         CloudShow can help your business today.</p>
                     <div className={s.promo__buttons}>
                         {/*<button className={cn(s.button ,s.button_colored, s.prom)}>Try It Free</button>*/}
-                        <Button classNames={'button button_colored'} children={'Try it free'}/>
+                        <Button classNames={'button button_colored prom'} children={'Try it free'}/>
                         <div className={cn(s.icon, s.ico_checked)}></div>
                         <p>60-day Enterprise free trial</p>
                     </div>

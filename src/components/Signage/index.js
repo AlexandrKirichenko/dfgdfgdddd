@@ -1,10 +1,21 @@
-import React from 'react'
-import s from './style.module.scss'
 import cn from 'classnames'
-import dashboard from '../../assets/img/images/dashboard.png';
-import calendars from '../../assets/img/images/calendar.png';
-import weather from '../../assets/img/images/weather.png';
-import promotional from '../../assets/img/images/promotional.png';
+import React from 'react'
+import calendars from '../../assets/img/images/calendar.png'
+import dashboard from '../../assets/img/images/dashboard.png'
+import promotional from '../../assets/img/images/promotional.png'
+import weather from '../../assets/img/images/weather.png'
+import s from './style.module.scss'
+import SignageItem from '../../layouts/SignageItem'
+
+// function SignageItem() {
+//     return <div className={s.signage__block}>
+//         <div className={s.block_wrap}>
+//             <img className={s.signage__item} src={dashboard}
+//                  alt="dashboards"/>
+//             <p className={s.signage__text}>Dashboards</p>
+//         </div>
+//     </div>
+// }
 
 const Signage = () => {
     return (
@@ -16,13 +27,14 @@ const Signage = () => {
                         them.</p>
                 </div>
                 <div className={s.layout__2_column}>
-                    <div className={s.signage__block}>
-                        <div className={s.block_wrap}>
-                            <img className={s.signage__item} src={dashboard}
-                                 alt="dashboards"/>
-                            <p className={s.signage__text}>Dashboards</p>
-                        </div>
-                    </div>
+                    <SignageItem description={'Dashboards'} src={dashboard}/>
+                    {/*<div className={s.signage__block}>*/}
+                    {/*    <div className={s.block_wrap}>*/}
+                    {/*        <img className={s.signage__item} src={dashboard}*/}
+                    {/*             alt="dashboards"/>*/}
+                    {/*        <p className={s.signage__text}>Dashboards</p>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <div className={s.signage__block}>
                         <div className={s.block_wrap}>
                             <img className={s.signage__item} src={calendars} alt="calendars"/>

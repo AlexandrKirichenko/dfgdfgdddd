@@ -1,6 +1,5 @@
 @import "../../scss/abstract/mixins";
 @import "../../scss/abstract/constants";
-@import "../../scss/buttons";
 
 .footer {
   background: $color-hading;
@@ -13,16 +12,17 @@
   &__container {
     display: flex;
   }
+  .logo {
+    text-align: center;
+    padding-top: 42px;
+  }
 };
 
 .footer__navigation {
   flex-grow:1;
   @include mobile{
     flex-direction: column;
-    .logo {
-      text-align: center;
-      padding-top: 20px;
-    }
+   
   }
   .nav__link {
     color: $color-white;
@@ -39,7 +39,9 @@
 }
 
 .footer__navigation_links {
-  
+  .icon_name {
+    padding-left: 10px;
+  }
   .nav__link_title{
     color: #78829C;
   }
@@ -56,6 +58,10 @@
       flex-basis: auto;
     }
   }
+}
+
+.footer__buttons {
+  margin: 34px 0 0 15px;
 }
 
 .one{
@@ -76,10 +82,7 @@
 .ico_fb{
   @include bg-img ("../../assets/img/icons/footer/fb.svg",24px);
 }
-.icon ico_fb {
-  padding:1rem ;
-  margin: 1rem;
-}
+
 .ico_linkedin{
   @include bg-img ("../../assets/img/icons/footer/linkedin.svg",24px);
 }

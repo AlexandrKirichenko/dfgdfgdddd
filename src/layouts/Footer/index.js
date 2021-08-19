@@ -2,6 +2,7 @@ import cn from 'classnames'
 import React, {useState} from 'react'
 import s from './style.module.scss'
 import logo from '../../assets/img/logo-footer.svg'
+import Button from '../Button'
 
 const Footer = () => {
     return (
@@ -36,22 +37,22 @@ const Footer = () => {
                             Media</a></li>
                         <li className={s.nav__list}><a href="" className={s.nav__link}>
                             <div className={cn(s.icon, s.ico_fb)}></div>
-                            Facebook</a></li>
+                            <span className={s.icon_name}>Facebook</span></a></li>
                         <li className={s.nav__list}><a href="" className={s.nav__link}>
                             <div className={cn(s.icon, s.ico_linkedin)}></div>
-                            Linkedin</a></li>
+                            <span className={s.icon_name}>Linkedin</span></a></li>
                         <li className={s.nav__list}><a href="" className={s.nav__link}>
                             <div className={cn(s.icon, s.ico_insta)}></div>
-                            Instagram</a></li>
+                            <span className={s.icon_name}>Instagram</span></a></li>
                         <li className={s.nav__list}><a href="" className={s.nav__link}>
                             <div className={cn(s.icon, s.ico_twitter)}></div>
-                            Twitter</a></li>
+                            <span className={s.icon_name}>Twitter</span></a></li>
                     </ul>
                 </div>
             </div>
-            <div className={cn(s.footer, s.header__buttons)}>
-                <button className={cn(s.button, s.button_bordered)}>Login</button>
-                <button className={cn(s.button, s.button_colored)}>Free Trial</button>
+            <div className={cn(s.footer, s.footer__buttons)}>
+                <Button classNames={'button button_bordered foo'} children={'Login'}/>
+                <Button classNames={'button button_colored foo'} children={'Free Trial'}/>
             </div>
         </div>
             <div className={cn(s.container, s.copyrighting)}>Copyright © 2007-2020 Binary Fortress Software</div>

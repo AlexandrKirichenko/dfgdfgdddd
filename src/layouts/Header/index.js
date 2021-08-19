@@ -6,7 +6,7 @@ import Button from '../Button'
 
 
 
-const Header = ({classNames, children }) => {
+const Header = () => {
     const [itemActive,setitemActive] =useState(false);
     
     const handleClick = () => {
@@ -26,7 +26,6 @@ const Header = ({classNames, children }) => {
                 </a>
           
                 <nav className={cn(s.header__nav, {[s.active] : itemActive})}>
-                    {/*<ul className={`${s.nav} ${itemActive ? s.active : ''}`}>*/}
                     <ul className={s.nav}>
                         <li className={s.nav__item}>
                             <a href="#promo" className={cn(s.nav__link, {[s.active] : itemActive})} onClick={handleClick}>Features</a>
@@ -48,8 +47,6 @@ const Header = ({classNames, children }) => {
                 <div className={s.header__buttons}>
                     <Button classNames={'button button_bordered'} children={'Login'}/>
                     <Button classNames={'button button_colored'} children={'Free Trial'}/>
-                    {/*<button className={cn(s.button, s.button_bordered)}>Login</button>*/}
-                    {/*<button className={cn(s.button, s.button_colored)}>Free Trial</button>*/}
                 </div>
             </div>
         </header>
