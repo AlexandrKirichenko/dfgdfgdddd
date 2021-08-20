@@ -28,7 +28,7 @@ const Header = () => {
                 <nav className={cn(s.header__nav, {[s.active] : itemActive})}>
                     <ul className={s.nav}>
                         <li className={s.nav__item}>
-                            <a href="#promo" className={cn(s.nav__link, {[s.active] : itemActive})} onClick={handleClick}>Features</a>
+                            <a href="#promo" className={cn(s.nav__link)} onClick={handleClick}>Features</a>
                         </li>
                         <li className={s.nav__item}>
                             <a href="#sysop" className={s.nav__link} onClick={handleClick}>How it Works</a>

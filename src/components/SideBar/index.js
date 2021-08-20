@@ -57,7 +57,7 @@ const dataSidebar = [
 
 const Item = ({item}) => {
     return <li className={s.menu__item}>
-        <a href={item.linkUrl} className={s.menu__link}>
+        <a href="{item.linkUrl}" className={s.menu__link}>
             <div className={cn(s.icon, item.icon)}></div>
             {item.linkTitle}</a>
         {item.secondary}

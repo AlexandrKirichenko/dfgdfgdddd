@@ -16,8 +16,8 @@ const Signage = () => {
                 <div className={s.layout__2_column}>
                     <SignageItem description={'Dashboards'} src={dashboard}/>
                     <SignageItem description={'Calendars'} src={calendars}/>
-                    <SignageItem description={'Promotional'} src={promotional}/>
                     <SignageItem description={'Weather'} src={weather}/>
+                    <SignageItem description={'Promotional'} src={promotional}/>
                 </div>
             </div>
         </section>

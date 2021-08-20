@@ -20,7 +20,7 @@ const Features = () => {
                         different days of the week.</FeatureItem>
                     <FeatureItem classNames={'ico_templates'} headerText={'Templates'}>Use templates to simplify your device management. Create a template and use it on
                         multiple devices with one-click.</FeatureItem>
-                    <FeatureItem classNames={'ico_ico_widgets'} headerText={'Widgets'}>Extend your sign's layout with widgets. Widgets can overlay extra information on your
+                    <FeatureItem classNames={'ico_widgets'} headerText={'Widgets'}>Extend your sign's layout with widgets. Widgets can overlay extra information on your
                         sign, like the time, date, weather, and more!</FeatureItem>
                     <FeatureItem classNames={'ico_realtime'} headerText={'Realtime Sign Updates'}>Use CloudShow to power a menu board at your restaurant,
                         a promo screen in reception, analytics dashboard for production, or anything else you can think of.</FeatureItem>
