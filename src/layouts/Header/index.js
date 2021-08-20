@@ -4,8 +4,6 @@ import Burger from '../Burger'
 import s from './style.module.scss'
 import Button from '../Button'
 
-
-
 const Header = () => {
     const [itemActive,setitemActive] =useState(false);
     

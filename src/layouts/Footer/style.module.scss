@@ -79,6 +79,10 @@
   padding: 3rem 0 5.3rem;
 }
 
+.ico {
+  padding-right: 10px;
+}
+
 .ico_fb{
   @include bg-img ("../../assets/img/icons/footer/fb.svg",24px);
 }

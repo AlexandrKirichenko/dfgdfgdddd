@@ -13,7 +13,6 @@ const Promo = () => {
                         CloudShow. Trusted by businesses worldwide, see how
                         CloudShow can help your business today.</p>
                     <div className={s.promo__buttons}>
-                        {/*<button className={cn(s.button ,s.button_colored, s.prom)}>Try It Free</button>*/}
                         <Button classNames={'button button_colored prom'} children={'Try it free'}/>
                         <div className={cn(s.icon, s.ico_checked)}></div>
                         <p>60-day Enterprise free trial</p>

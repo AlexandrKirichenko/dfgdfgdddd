@@ -33,18 +33,18 @@ const Footer = () => {
                 </div>
                 <div className={cn(s.footer__navigation, s.column_three)}>
                     <ul className={s.footer__navigation_links}>
-                        <li className={s.nav__list}><a href="" className={cn(s.nav__link, s.nav__link_title)}>Social
+                        <li className={s.nav__link}><a href="" className={cn(s.nav__link, s.nav__link_title)}>Social
                             Media</a></li>
-                        <li className={s.nav__list}><a href="" className={s.nav__link}>
+                        <li className={s.nav__link}><a href="" className={s.nav__link}>
                             <div className={cn(s.icon, s.ico_fb)}></div>
                             <span className={s.icon_name}>Facebook</span></a></li>
-                        <li className={s.nav__list}><a href="" className={s.nav__link}>
+                        <li className={s.nav__link}><a href="" className={s.nav__link}>
                             <div className={cn(s.icon, s.ico_linkedin)}></div>
                             <span className={s.icon_name}>Linkedin</span></a></li>
-                        <li className={s.nav__list}><a href="" className={s.nav__link}>
+                        <li className={s.nav__link}><a href="" className={s.nav__link}>
                             <div className={cn(s.icon, s.ico_insta)}></div>
                             <span className={s.icon_name}>Instagram</span></a></li>
-                        <li className={s.nav__list}><a href="" className={s.nav__link}>
+                        <li className={s.nav__link}><a href="" className={s.nav__link}>
                             <div className={cn(s.icon, s.ico_twitter)}></div>
                             <span className={s.icon_name}>Twitter</span></a></li>
                     </ul>

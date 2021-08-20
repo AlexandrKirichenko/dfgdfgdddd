@@ -50,7 +50,6 @@
 }
 
 .promo__image {
-
   @include bg-img("../../assets/img/images/promo.svg",476px,576px);
   @include mobile {
     max-width: 300px;
@@ -62,7 +61,7 @@
 }
 
 .ico_checked {
-  margin-left: 15px;
+  margin:0 8px 0 15px;
   @include bg-img ("../../assets/img/icons/checkmark.png",24px)
 }
 

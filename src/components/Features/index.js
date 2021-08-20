@@ -1,6 +1,4 @@
 import React from 'react'
-import Button from '../../layouts/Button'
-import Customers from '../Customers'
 import s from './style.module.scss'
 import cn from 'classnames'
 import FeatureItem from '../../layouts/FeatureItem'

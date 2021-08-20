@@ -12,38 +12,39 @@
   .section__description {
     padding: 14px 0 60px 0;
   }
-}
-
-.section__header {
-  margin-bottom: 0;
-  font-family: Nunito Sans;
-  color:$color-hading;
-  @include mobile{
-    padding-top: 5px;
+  .section__header {
+    margin-bottom: 0;
+    font-family: Nunito Sans;
+    color:$color-hading;
+    @include mobile{
+      padding-top: 5px;
+    }
+  }
+  
+  .section__description {
+    @include font(1.8rem, 3rem, normal);
+    color: $color-text;
+  }
+  
+  .layout__3_column{
+    @include columns($width: 334px);
+    @include mobile{
+      @include columns($width: 364px);
+    }
+    @include font(1.4rem, 2.6rem, normal);
+    color: $color-text;
+    padding-top: 35px;
+  }
+  
+  .features__link {
+    padding-top: 1px;
+    font-family: Nunito Sans;
+    @include font(1.8rem, 3rem, bold);
+    color: $color-brand;
+    text-align: center;
   }
 }
 
-.section__description {
-  @include font(1.8rem, 3rem, normal);
-  color: $color-text;
-}
-
-.layout__3_column{
-  @include columns($width: 334px);
-  @include mobile{
-    @include columns($width: 364px);
-  }
-  @include font(1.4rem, 2.6rem, normal);
-  color: $color-text;
-  padding-top: 35px;
-}
 
 
-.features__link {
-  padding-top: 1px;
-  font-family: Nunito Sans;
-  @include font(1.8rem, 3rem, bold);
-  color: $color-brand;
-  text-align: center;
-}
 

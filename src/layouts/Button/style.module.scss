@@ -9,13 +9,16 @@
   height: 44px;
   outline: none;
   border: none;
-
+  .prom,
+  .foo {
+    width: 119px;
+  }
 
   &_bordered {
     background: $color-white;
     border: 1px solid $color-brand;
     color: $color-brand;
-    padding: 0.6rem 3.4rem;
+    padding: 6px 34px;
     margin-right: 15px;
     &:hover {
       background: $color-background;
@@ -27,7 +30,7 @@
     background: $color-brand;
     border-color: $color-brand;
     color: $color-white;
-    padding: 0.6rem 2.1rem 2rem;
+    padding: 6px 21px 20px;
     @extend %transition;
     &:hover{
       background: $color-white;
@@ -39,7 +42,7 @@
     background: $color-brand;
     border: 1px solid $color-white;
     color: $color-white;
-    padding: 0.6rem 5rem;
+    padding: 6px 50px;
     @extend %transition;
     margin-right: 20px;
     &:hover {
@@ -52,7 +55,7 @@
     background: $color-white;
     border: 1px solid $color-white;
     color: $color-brand;
-    padding: 0.6rem 2rem 1.9rem;
+    padding: 6px 20px 19px;
     @extend %transition;
     &:hover {
       background: $color-brand;
@@ -62,7 +65,4 @@
   }
 }
 
-.prom,
-.foo {
-  width: 119px;
-}
+

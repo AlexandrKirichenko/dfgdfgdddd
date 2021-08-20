@@ -24,31 +24,20 @@
   }
 }
 
-.trial__container{
-  @include flex();
-  @include font(1.4rem, 3rem, 600);
-  padding-top: 16px;
-
-}
-
 .ico_logo {
   @include bg-img("../../assets/img/logo-white.svg", 56px, 74px);
 }
-
-//.link-button {
-//  text-decoration: none;
-//  font-weight: normal;
-//  font-size: 14px;
-//  line-height: 30px;
-//  &_:visited {
-//    color:$color-white;
-//  }
-//}
 
 .create__account_buttons {
   .button {
     margin-right: 20px;
   }
+  .trial__container{
+    @include flex();
+    @include font(1.4rem, 3rem, 600);
+    padding-top: 16px;
+  }
+  
   @include mobile {
     display: flex;
     flex-direction: column;
@@ -58,6 +47,6 @@
 }
 
 .ico_checked {
-  margin-left: 15px;
+  margin:0 8px 0 15px;
   @include bg-img ("../../assets/img/icons/checkmark.png",24px)
 }
