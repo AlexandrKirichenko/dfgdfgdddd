@@ -2,26 +2,17 @@
 @import "../../scss/abstract/constants";
 @import "../../scss/buttons";
 
-//.features_container{
-//  display: flex;
-//  flex-direction: column;
-//  align-items: center;
-//}
 .features {
   background-color:$color-background;
-  .section__header {
+  padding-top: 104px;
+
+  .features__container {
     padding-top: 104px;
-    text-align: center;
   }
   .section__description {
     padding: 14px 0 60px 0;
   }
 }
-
-//.section__header,
-//.section__description {
-//  text-align: center;
-//}
 
 .section__header {
   margin-bottom: 0;
@@ -46,10 +37,6 @@
   color: $color-text;
 }
 
-.features__header {
-  padding-bottom: 10px;
-  @include flex(flex-start);
-}
 
 .features__link {
   padding-top: 1px;
@@ -59,31 +46,3 @@
   text-align: center;
 }
 
-.features__block {
-  background-color: $color-white;
-  margin-bottom: 3.1rem;
-  @include font(1.4rem, 2.6rem, normal);
-}
-
-.block__content_wrap {
-  padding: 25px 18px 25px 25px;
-}
-
-.ico_flex {
-  @include bg-img ("../../assets/img/icons/features/1.svg",5.1rem)
-}
-.ico_apps {
-  @include bg-img ("../../assets/img/icons/features/2.svg",5.1rem)
-}
-.ico_schedul {
-  @include bg-img ("../../assets/img/icons/features/3.svg",5.1rem)
-}
-.ico_templates {
-  @include bg-img ("../../assets/img/icons/features/4.svg",5.1rem)
-}
-.ico_widgets {
-  @include bg-img ("../../assets/img/icons/features/5.svg",5.1rem)
-}
-.ico_realtime{
-  @include bg-img ("../../assets/img/icons/features/6.svg",5.1rem)
-}

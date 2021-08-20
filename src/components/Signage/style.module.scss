@@ -1,0 +1,12 @@
+@import "../../scss/abstract/mixins";
+@import "../../scss/abstract/constants";
+
+.signage{
+  background: $color-background;
+  .layout__2_column {
+    @include columns($width: 521px);
+    @include font(2.2rem, 3rem, bold);
+    padding-bottom: 87px;
+    color: $color-hading;
+  }
+}

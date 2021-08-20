@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 const Customers = () => {
     return (
-        <section className={s.customers}>
+        <section className={s.customers} id="customers">
             <div className={cn(s.customers__container, s.container)}>
                 <div className={cn(s.customers__logo, s.insta)}></div>
                 <div className={cn(s.customers__logo, s.twitter)}></div>

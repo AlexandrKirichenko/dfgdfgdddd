@@ -1,6 +1,6 @@
 @import "../../scss/abstract/mixins";
 @import "../../scss/abstract/constants";
-@import "../../scss/buttons";
+
 
 .header {
   padding-top: 36px;
@@ -10,6 +10,7 @@
     top: 0;
     height: 100%;
     width: 100%;
+    z-index: 5;
   }
 }
 .header__buttons {
@@ -22,24 +23,112 @@
   }
 }
 
-
 .header__container {
   @include flex(space-between);
   @include mobile {
     padding-left: 24px;
     @include flex (flex-start);
   }
-  .header__nav {
-    margin-left: 10px;
+  %hamburger-line {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #78829C;
+    border-radius: 5px;
+    height: 3px;
+    width: 100%
   }
   
-  .header__nav {
+  .hamburger {
+    display: none;
+    position: relative;
+    width: 3rem;
+    height: 2.5rem;
+    margin-right: 2rem;
+    @include mobile {
+      display: inline-block;
+    }
+    &.active {
+      display: inline-block;
+      z-index: 50;
+    }
+    &:before {
+      @extend %hamburger-line;
+      top: 0;
+      left:0;
+    }
+    &:after {
+      @extend %hamburger-line;
+      bottom: 0;
+      left:0;
+    }
+  }
+  
+  .hamburger__line {
+    @extend %hamburger-line;
+    top: calc(50% - 1.5px);
+    left: 0;
+  }
+  
+  .header__navigation {
     @include mobile {
       display: none;
     }
   }
-  .nav {
-    display: flex;
+  .header__nav {
+    margin-left: 10px;
+  }
+  
+  
+  
+  .header__nav {
+    left: -100%;
+    .nav {
+      display: flex;
+    }
+    @include mobile {
+      display: none;
+      &.active {
+        display: flex;
+        transition: left 0.3s;
+        margin-top: -36px;
+        margin-left: -1px;
+        padding-top: 36px;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        transform: translate(0, 0);
+        background-color: $color-brand;
+        top: 0;
+        left: 0;
+        list-style: none;
+        .nav {
+          flex-direction: column;
+          text-align: center;
+          padding-top: 20px;
+          li {
+            padding-top: 20px;
+          }
+          .nav__link {
+            &:hover {
+              text-decoration: underline;
+            }
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 50px;
+            text-align: start;
+            color: $color-white;
+            margin-top: 20px
+          }
+        }
+      }
+    }
+  }
+  //.nav {
+  //  display: flex;
+  //  @include mobile {
+  //
+  //  }
     .nav__item {
       list-style: none;
       padding-right: 25px;
@@ -52,7 +141,7 @@
       }
     }
   }
-}
+//}
 
 .logo__icon {
   background-image: url(../../assets/img/icons/main-logo.svg);
@@ -64,3 +153,4 @@
     background-size: cover;
   }
 }
+

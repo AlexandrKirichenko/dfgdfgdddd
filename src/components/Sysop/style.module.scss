@@ -32,8 +32,11 @@
     .sysop__rate {
       @include flex(flex-start);
       padding: 25px 0 35px 48px;
+      .ico__star {
+        @include bg-img ("../../assets/img/icons/features/star.svg",2.4rem);
+      }
       @include mobile {
-        padding: 0 0 10px 1opx;
+        padding: 0 0 10px 1px;
       }
     }
     .sysop__review {
@@ -42,3 +45,4 @@
     }
   }
 }
+

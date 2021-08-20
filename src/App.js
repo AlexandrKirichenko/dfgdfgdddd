@@ -1,12 +1,16 @@
 import './App.scss';
+import cn from 'classnames'
 import SideBar from "./components/SideBar";
 import Header from "./layouts/Header";
 import Promo from "./components/Promo";
 import Customers from "./components/Customers";
 import Features from "./components/Features";
 import Sysop from "./components/Sysop";
+import Signage from "./components/Signage";
+import CreateAcc from "./components/CreateAcc";
+import Footer from './layouts/Footer'
 import React from "react";
-
+import s from './layouts/Header/style.module.scss'
 
 function App() {
   return (
@@ -17,6 +21,15 @@ function App() {
                 <Customers/>
                 <Features />
                 <Sysop />
+                <Signage />
+                <CreateAcc/>
+                <Footer/>
+                
+                {/*Все, что нужно перенести в блоки перенести(при клики на элементы меню, закрывать меню и хэшить на якоря)*/}
+            {/*    onClick={*/}
+            {/*    closeMenu()*/}
+            {/*    history.push(path)*/}
+            {/*}*/}
                 {/*<section className={features}>*/}
                 {/*        <div className={features_container container}>*/}
                 {/*            <div className={section__header}>*/}
@@ -173,25 +186,29 @@ function App() {
                 {/*            </div>*/}
                 {/*        </div>*/}
                 {/*    </section>*/}
-                {/*    <section className={create-account}>*/}
-                {/*        <div className={container}>*/}
-                {/*            <div className={create-account__block}>*/}
-                {/*                <div className={icon ico logo}></div>*/}
-                {/*                <h2 className={create-account__header}>Try CloudShow today!</h2>*/}
-                {/*                <p className={create-account__description}>Try CloudShow today, it's completely free for*/}
-                {/*                    one device! <br/>*/}
-                {/*                    Need more devices?</p>*/}
-                {/*                <div className={create-account__buttons}>*/}
-                {/*                    <button className={button button_long_colored}>View Demo</button>*/}
-                {/*                    <button className={button button_long_light}>Create Free Account</button>*/}
-                {/*                    <div className={trial__container}>*/}
-                {/*                        <div className={icon ico_checked}></div>*/}
-                {/*                        <p className={trial__description}>60-day Enterprise free trial</p>*/}
-                {/*                    </div>*/}
-                {/*                </div>*/}
-                {/*            </div>*/}
-                {/*        </div>*/}
-                {/*    </section>*/}
+                
+                
+                    {/*<section className={create-account}>*/}
+                    {/*    <div className={container}>*/}
+                    {/*        <div className={create-account__block}>*/}
+                    {/*            <div className={icon ico logo}></div>*/}
+                    {/*            <h2 className={create-account__header}>Try CloudShow today!</h2>*/}
+                    {/*            <p className={create-account__description}>Try CloudShow today, it's completely free for*/}
+                    {/*                one device! <br/>*/}
+                    {/*                Need more devices?</p>*/}
+                    {/*            <div className={create-account__buttons}>*/}
+                    {/*                <button className={button button_long_colored}>View Demo</button>*/}
+                    {/*                <button className={button button_long_light}>Create Free Account</button>*/}
+                    {/*                <div className={trial__container}>*/}
+                    {/*                    <div className={icon ico_checked}></div>*/}
+                    {/*                    <p className={trial__description}>60-day Enterprise free trial</p>*/}
+                    {/*                </div>*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</section>*/}
+                
+                
                 {/*<footer className={footer}>}<div className={footer__container container}>*/}
                 {/*        <div className={footer-navigation layout-4-column}>*/}
                 {/*            <a href="#" className="logo">*/}
