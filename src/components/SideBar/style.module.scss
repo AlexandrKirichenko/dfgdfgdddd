@@ -17,6 +17,12 @@
             .menu__item {
                 @include flex(flex-start);
                 margin-right: 15px;
+                .menu__link {
+                    display: flex;
+                    @include font (14px, 19px, 600);
+                    text-decoration: none;
+                    top: calc(50% - 19px/2);
+                }
                 .icon {
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -26,13 +32,6 @@
             }
         }
     }
-}
-
-.menu__link {
-    display: flex;
-    @include font (14px, 19px, 600);
-    text-decoration: none;
-    top: calc(50% - 19px/2);
 }
 
 .ico_binary {
@@ -67,11 +66,6 @@
     @include bg-img("../../assets/img/icons/sidebar/bot.png", 22px,24px);
 }
 
-.menu__arrow {
-    border: none;
-    outline: none;
-    background-color: $color-background;
-}
 
 
 

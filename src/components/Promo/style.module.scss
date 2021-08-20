@@ -30,41 +30,35 @@
       @include font(1.4rem, 2.6rem, normal);
     }
   }
-}
-
-.promo__content__header {
-  @include mobile{
-    text-align: center;
+  .promo__content__header {
+    @include mobile{
+      text-align: center;
+    }
   }
-}
-
-.link-button{
-  text-decoration: none;
-  padding-top: 10px;
-}
-
-.promo__buttons {
-  @include flex(flex-start);
-  @include font(1.4rem, 3rem, normal);
-  color: $color-text;
-}
-
-.promo__image {
-  @include bg-img("../../assets/img/images/promo.svg",476px,576px);
-  @include mobile {
-    max-width: 300px;
+  .promo__buttons {
+    @include flex(flex-start);
+    @include font(1.4rem, 3rem, normal);
+    color: $color-text;
+    .prom {
+      width: 119px;
+    }
   }
-}
-
-.prom {
-  width: 119px;
+  
+  .link-button{
+    text-decoration: none;
+    padding-top: 10px;
+  }
+  
+  .promo__image {
+    @include bg-img("../../assets/img/images/promo.svg",476px,576px);
+    @include mobile {
+      max-width: 300px;
+    }
+  }
+  
 }
 
 .ico_checked {
   margin:0 8px 0 15px;
   @include bg-img ("../../assets/img/icons/checkmark.png",24px)
-}
-
-.acc {
-  max-width: 181px;
 }
