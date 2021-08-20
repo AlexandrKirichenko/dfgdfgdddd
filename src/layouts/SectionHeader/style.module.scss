@@ -1,0 +1,11 @@
+@import "../../scss/abstract/mixins";
+@import "../../scss/abstract/constants";
+
+.section__header {
+  text-align: center;
+}
+
+.section__description {
+  @include font(1.8rem, 3rem, normal);
+  color: $color-text;
+}

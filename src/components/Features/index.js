@@ -4,17 +4,13 @@ import Customers from '../Customers'
 import s from './style.module.scss'
 import cn from 'classnames'
 import FeatureItem from '../../layouts/FeatureItem'
-
+import SectionHeader from '../../layouts/SectionHeader'
 
 const Features = () => {
     return (
         <section className={s.features} id="features">
             <div className={cn(s.features_container, s.container)}>
-                <div className={s.section__header}>
-                    <h2>CloudShow Features</h2>
-                    <div className={s.section__description}>Discover our unique features and learn more about them.
-                    </div>
-                </div>
+                <SectionHeader headerText={'CloudShow Features'} description={'Discover our unique features and learn more about them.'}/>
                 <div className={s.layout__3_column}>
                     <FeatureItem classNames={'ico_flex'} headerText={'Flexible & Easy to Setup'}>Use CloudShow to power a menu board at your restaurant,
                         a promo screen in reception, analytics dashboard for production, or anything else you can think of.</FeatureItem>
@@ -28,9 +24,6 @@ const Features = () => {
                         sign, like the time, date, weather, and more!</FeatureItem>
                     <FeatureItem classNames={'ico_realtime'} headerText={'Realtime Sign Updates'}>Use CloudShow to power a menu board at your restaurant,
                         a promo screen in reception, analytics dashboard for production, or anything else you can think of.</FeatureItem>
-                    {/*<div className={cn(s.icon, s.ico_flex)}></div>*/}
-                    {/*<FeatureBlock text={"Flexible & Easy to Setup"}/>*/}
-                    
                 </div>
                 <div className={s.features__link}><a href="#">View all features</a></div>
             </div>

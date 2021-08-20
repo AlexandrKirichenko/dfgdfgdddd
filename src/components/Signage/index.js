@@ -6,16 +6,13 @@ import promotional from '../../assets/img/images/promotional.png'
 import weather from '../../assets/img/images/weather.png'
 import s from './style.module.scss'
 import SignageItem from '../../layouts/SignageItem'
+import SectionHeader from '../../layouts/SectionHeader'
 
 const Signage = () => {
     return (
         <section className={s.signage} id="signage">
             <div className={cn(s.signage__container, s.container)}>
-                <div className={s.section__header}>
-                    <h2>Digital Signage that grow your business</h2>
-                    <p className={s.section__description}>Discover our unique features and learn more about
-                        them.</p>
-                </div>
+                <SectionHeader headerText={'Digital Signage that grow your business'} description={'Discover our unique features and learn more about them.'} />
                 <div className={s.layout__2_column}>
                     <SignageItem description={'Dashboards'} src={dashboard}/>
                     <SignageItem description={'Calendars'} src={calendars}/>

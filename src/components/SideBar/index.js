@@ -2,6 +2,9 @@ import React from 'react'
 import s from './style.module.scss'
 import cn from 'classnames'
 
+const dataSidebar = {
+
+}
 
 const SideBar = () => {
  
