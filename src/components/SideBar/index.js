@@ -2,9 +2,19 @@ import React from 'react'
 import s from './style.module.scss'
 import cn from 'classnames'
 
-const dataSidebar = {
-
+const dataSidebar = [
+        {
+            id: 1,
+            linkUrl: 'https://server/...',
+            linkTitle: 'LINK 1'
+        },
+{
+    id: 2,
+        linkUrl: 'https://server/...',
+        linkTitle: 'LINK 1'
 }
+]
+
 
 const SideBar = () => {
  
