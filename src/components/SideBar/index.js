@@ -8,6 +8,9 @@ const SideBar = () => {
         <aside className={s.sidebar}>
             <nav className={cn(s.sidebar__container, s.container)}>
                 <ul className={s.menu}>
+                    {/*{*/}
+                    
+                    {/*}*/}
                     <li className={s.menu__item}>
                         <a href="#" className={s.menu__link}>
                         <div className={cn(s.icon, s.ico_binary)}></div>
