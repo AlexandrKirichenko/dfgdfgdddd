@@ -3,49 +3,74 @@ import s from './style.module.scss'
 import cn from 'classnames'
 
 const dataSidebar = [
-        {
-            id: 1,
-            linkUrl: 'https://server/...',
-            linkTitle: 'LINK 1'
-        },
-{
-    id: 2,
-        linkUrl: 'https://server/...',
-        linkTitle: 'LINK 1'
-}
+    {
+        id: 1,
+        linkUrl: 'https://link1',
+        linkTitle: 'Binary Fortress',
+        secondary: <div className={cn(s.menu__arrow, s.ico_arrow)}></div>,
+        icon: s.ico_binary
+    },
+    {
+        id: 2,
+        linkUrl: '#',
+        linkTitle: 'DisplayFusion',
+        secondary: null,
+        icon: s.ico_display
+    },
+    {
+        id: 3,
+        linkUrl: '#',
+        linkTitle: 'CheckCentral',
+        secondary: null,
+        icon: s.ico_check
+    },
+    {
+        id: 4,
+        linkUrl: '#',
+        linkTitle: 'ClipboardFusion',
+        secondary: null,
+        icon: s.ico_clip
+    },
+    {
+        id: 5,
+        linkUrl: '#',
+        linkTitle: 'FileSeek',
+        secondary: null,
+        icon: s.ico_seek
+    },
+    {
+        id: 6,
+        linkUrl: '#',
+        linkTitle: 'VoiceBot',
+        secondary: null,
+        icon: s.ico_bot
+    },
+    {
+        id: 7,
+        linkUrl: '#',
+        linkTitle: 'WallpaperFusion',
+        secondary: null,
+        icon: s.ico_wall
+    },
+
 ]
 
+const Item = ({item}) => {
+    return <li className={s.menu__item}>
+        <a href={item.linkUrl} className={s.menu__link}>
+            <div className={cn(s.icon, item.icon)}></div>
+            {item.linkTitle}</a>
+        {item.secondary}
+    </li>
+}
 
 const SideBar = () => {
- 
+    
     return (
         <aside className={s.sidebar} id="sidebar">
             <nav className={cn(s.sidebar__container, s.container)}>
                 <ul className={s.menu}>
-                    <li className={s.menu__item}>
-                        <a href="#" className={s.menu__link}>
-                        <div className={cn(s.icon, s.ico_binary)}></div>
-                        Binary Fortress</a>
-                        <div className={cn(s.menu__arrow, s.ico_arrow)}></div>
-                    </li>
-                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
-                        <div className={cn(s.icon, s.ico_display)}></div>
-                        DisplayFusion</a></li>
-                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
-                        <div className={cn(s.icon, s.ico_check)}></div>
-                        CheckCentral</a></li>
-                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
-                        <div className={cn(s.icon, s.ico_clip)}></div>
-                        ClipboardFusion</a></li>
-                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
-                        <div className={cn(s.icon, s.ico_seek)}></div>
-                        FileSeek</a></li>
-                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
-                        <div className={cn(s.icon, s.ico_bot)}></div>
-                        VoiceBot</a></li>
-                    <li className={s.menu__item}><a href="#" className={s.menu__link}>
-                        <div className={cn(s.icon, s.ico_wall)}></div>
-                        WallpaperFusion</a></li>
+                    {dataSidebar.map(item => <Item item={item} key={item.id}/>)}
                 </ul>
             </nav>
         </aside>
